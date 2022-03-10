@@ -6,10 +6,10 @@ module.exports = {
         .setName("소라고동")
         .setDescription("소라고동님 알려주세요")
         .addStringOption((option) =>
-            option.setName("content").setDescription("내용 입력").setRequired(true),
+            option.setName("내용").setDescription("내용 입력").setRequired(true),
         ),
     async execute(interaction) {
-        const string = interaction.options.getString("content");
+        const string = interaction.options.getString("내용");
         const ans = ["Yes", "No"];
         const emojiList = [
             ":laughing:",
